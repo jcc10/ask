@@ -5,7 +5,7 @@ import Input from './src/input.ts';
 import Number, { NumberOpts } from './src/number.ts';
 import Confirm, { ConfirmOpts } from './src/confirm.ts';
 
-class Ask {
+export class Ask {
   private opts: GlobalPromptOpts | PromptOpts | NumberOpts | ConfirmOpts;
 
   constructor(opts?: GlobalPromptOpts) {
@@ -56,5 +56,3 @@ class Ask {
     return answers;
   }
 }
-
-export default Ask;
